@@ -37,11 +37,11 @@
             <legend class="visually-hidden">Информация о коте</legend>
             <ul class="form__list">
               <li class="form__item">
-                <label class="form__label" for="cat-name">Имя:</label>
+                <label class="form__label" for="cat-name">Имя:<sub>*</sub></label>
                 <input class="form__field" type="text" id="cat-name" name="cat-name" placeholder="Барсик" required>
               </li>
               <li class="form__item">
-                <label class="form__label" for="cat-weight">Вес (кг):</label>
+                <label class="form__label" for="cat-weight">Вес (кг):<sub>*</sub></label>
                 <input class="form__field" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
               </li>
               <li class="form__item">
@@ -83,11 +83,11 @@
             <legend class="form__legend">Контактные данные (владельца кота)</legend>
             <ul class="form__list">
               <li class="form__item">
-                <label class="form__label" for="email">E-mail:</label>
+                <label class="form__label" for="email">E-mail:<sub>*</sub></label>
                 <input class="form__field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
               </li>
               <li class="form__item">
-                <label class="form__label" for="">Телефон:</label>
+                <label class="form__label" for="">Телефон:<sub>*</sub></label>
                 <input class="form__field" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
               </li>
             </ul>
@@ -133,7 +133,7 @@
           </fieldset>
 
           <button class="button form__submit" type="submit">отправить заявку</button>
-          <p class="form__note"><small> — Обязательные поля</small></p>
+          <p class="form__note"><small><sub>*</sub> — Обязательные поля</small></p>
         </form>
 
       </section>
