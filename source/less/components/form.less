@@ -1,5 +1,4 @@
 .form {
-  margin: 0 auto;
   width: 280px;
 }
 
@@ -7,7 +6,7 @@
   margin: 0;
   margin-bottom: 20px;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   .font(36px, 36px);
   font-weight: 400;
   color: #000000;
@@ -17,7 +16,7 @@
   margin: 0;
   margin-bottom: 39px;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   .font(14px, 18px);
   font-weight: 400;
   text-transform: uppercase;
@@ -28,7 +27,7 @@
   margin: 0;
   padding: 0;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   .font(16px, 18px);
   font-weight: 400;
   text-transform: uppercase;
@@ -38,23 +37,19 @@
 }
 
 .form__list {
-  margin: 0;
-  padding: 0;
-
-  list-style-type: none;
+  .reset-list();
 }
 
 .form__item {
   margin-bottom: 14px;
 
   display: flex;
-  flex-direction: row;
 }
 
 .form__field {
   flex-grow: 1;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   .font(16px, 18px);
   font-weight: 400;
   text-transform: uppercase;
@@ -62,10 +57,7 @@
 }
 
 .form__program {
-  margin: 0;
-  padding: 0;
-
-  list-style-type: none;
+  .reset-list();
 }
 
 .form__program-item {
@@ -83,7 +75,7 @@
 .form__comment {
   width: 280px;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   .font(16px, 18px);
   font-weight: 400;
   text-transform: uppercase;
@@ -93,10 +85,7 @@
 }
 
 .form__additionally {
-  margin: 0;
-  padding: 0;
-
-  list-style-type: none;
+  .reset-list();
 }
 
 .form__additionally-item {
@@ -117,7 +106,7 @@
   color: #000000;
   text-align: center;
 
-  & small {
+  small {
     .font(14px, 16px);
   }
 }
