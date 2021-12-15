@@ -1,13 +1,7 @@
-.programs {
-  width: 100%;
-}
-
 .programs__list {
-  width: 280px;
-
+  .reset-list();
   display: flex;
   flex-direction: column;
-  .reset-list();
 }
 
 .programs__item {
@@ -18,7 +12,7 @@
 .programs__subtitle {
   margin: 0;
 
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: @oswald-font;
   .font(24px, 37px);
   font-weight: 400;
   text-transform: uppercase;

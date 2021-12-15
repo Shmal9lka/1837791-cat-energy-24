@@ -1,11 +1,5 @@
-.catalog {
-  width: 100%;
-}
-
 .catalog__title {
-  width: 280px;
-
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: @oswald-font;
   .font(36px, 40px);
   font-weight: 400;
   color: #000000;
@@ -13,12 +7,11 @@
 
 .catalog__list {
   border-top: 1px solid #ebebeb;
-  list-style: none;
+  .reset-list();
 }
 
 .catalog__item {
   margin-top: 19px;
-  width: 280px;
 
   &--more {
     text-align: center;
@@ -32,13 +25,13 @@
 .catalog__link {
   margin: 0;
 
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: @oswald-font;
   .font(16px, 20px);
   font-weight: 400;
   color: #222222;
   text-decoration: none;
 
-  & h3 {
+  h3 {
     margin: 0;
   }
 }
@@ -50,7 +43,7 @@
   font-weight: 400;
   color: #444444;
 
-  & td {
+  td {
     padding: 0;
   }
 }
@@ -60,7 +53,7 @@
 }
 
 .catalog__description {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: @oswald-font;
   .font(16px, 20px);
   font-weight: 400;
   color: #111111;

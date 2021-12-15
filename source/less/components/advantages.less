@@ -1,22 +1,17 @@
-.advantages {
-  width: 280px;
-}
 
 .advantages__title {
   margin: 0;
 
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: @oswald-font;
   .font(36px, 40px);
   font-weight: 400;
   color: #000000;
 }
 
 .advantages__list {
-
+  .reset-list();
   display: flex;
   flex-direction: column;
-
-  .reset-list();
 }
 
 .advantages__item {
