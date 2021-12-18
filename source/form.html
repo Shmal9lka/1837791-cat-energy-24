@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="./css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header container">
       <div class="page-header__wrapper">
         <a class="logo page-header__logo" href="index.html">
           <img src="img/logo-icon-mobile.svg" width="33" height="38" alt="Иконка логотипа cat energy">
@@ -29,7 +30,7 @@
     </header>
 
     <main class="inner-main">
-      <section class="form">
+      <section class="form container">
         <h2 class="form__title">Подбор программы</h2>
         <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form action="https://echo.htmlacademy.ru" method="post" target="_blank">
@@ -58,22 +59,22 @@
               <li class="form__program-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="program" value="slimming" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">Похудение</span>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Похудение</span>
                 </label>
               </li>
               <li class="form__program-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="program" value="weight-gain">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Набор массы</span>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Набор массы</span>
                 </label>
               </li>
               <li class="form__program-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="program" value="advice">
-                  <span class="control-mark"></span>
-                  <span class="control-label">Не знаю (Нужен ваш совет)</span>
+                  <span class="control__mark"></span>
+                  <span class="control__label">Не знаю (Нужен ваш совет)</span>
                 </label>
               </li>
             </ul>
@@ -104,29 +105,29 @@
               <li class="form__additionally-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="sweetener" checked>
-                  <span class="control-mark"></span>
-                  <span class="control-label">сахарозаменитель</span>
+                  <span class="control__mark"></span>
+                  <span class="control__label">сахарозаменитель</span>
                 </label>
               </li>
               <li class="form__additionally-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="water">
-                  <span class="control-mark"></span>
-                  <span class="control-label">питьевая вода</span>
+                  <span class="control__mark"></span>
+                  <span class="control__label">питьевая вода</span>
                 </label>
               </li>
               <li class="form__additionally-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="milk">
-                  <span class="control-mark"></span>
-                  <span class="control-label">молоко</span>
+                  <span class="control__mark"></span>
+                  <span class="control__label">молоко</span>
                 </label>
               </li>
               <li class="form__additionally-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="checkbox" name="vitamins">
-                  <span class="control-mark"></span>
-                  <span class="control-label">витамины</span>
+                  <span class="control__mark"></span>
+                  <span class="control__label">витамины</span>
                 </label>
               </li>
             </ul>
@@ -145,14 +146,14 @@
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
         <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003006!2d30.32085871595745!3d59.938719169054345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2see!4v1637931117542!5m2!1sru!2see" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003006!2d30.32085871595745!3d59.938719169054345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2see!4v1637931117542!5m2!1sru!2see" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
           <img class="contacts__map-icon" src="img/map-icon.png" width="57" height="53" alt="Иконка на карте.">
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper container">
         <img class="logo page-footer__logo" src="img/logo.svg" width="128" height="24" alt="логотип cat energy">
         <ul class="page-footer__social social">
           <li class="social__item">

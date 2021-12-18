@@ -1,0 +1,36 @@
+.programs__list {
+  .reset-list();
+  display: flex;
+  flex-direction: column;
+}
+
+.programs__item {
+  margin-bottom: 20px;
+  background-color: @bg-color-lighter;
+}
+
+.programs__subtitle {
+  .font(24px, 37px);
+  font-family: @oswald-font;
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.programs__description {
+  margin: 0;
+
+  .font(14px, 18px);
+  color: #444444;
+}
+
+.programs__link {
+  .font(16px, 16px);
+  font-family: @oswald-font;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}

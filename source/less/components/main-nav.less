@@ -1,0 +1,35 @@
+.main-nav {
+  position: absolute;
+  top: 40px;
+
+  display: none;
+  width: 100%;
+
+  &--open {
+    display: block;
+  }
+}
+
+.main-nav__list {
+  .reset-list();
+  align-items: center;
+}
+
+.main-nav__link {
+  .font(20px, 20px);
+  font-family: @oswald-font;
+  font-weight: 500;
+  padding: 22px 0 24px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

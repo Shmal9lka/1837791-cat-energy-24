@@ -1,0 +1,36 @@
+.catalog__title {
+  .font(36px, 40px);
+  font-family: @oswald-font;
+  font-weight: 400;
+  color: #000000;
+}
+
+.catalog__list {
+  .reset-list();
+  border-top: 1px solid #ebebeb;
+}
+
+.catalog__item {
+  margin-top: 19px;
+
+  &--more {
+    text-align: center;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid #ebebeb;
+  }
+}
+
+.catalog__button--more {
+  color: #444444;
+  background-color: @bg-color-lighter;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
