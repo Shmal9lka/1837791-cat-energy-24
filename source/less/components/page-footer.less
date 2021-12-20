@@ -1,5 +1,10 @@
 .page-footer {
   background-color: @bg-color-lighter;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__wrapper {

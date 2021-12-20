@@ -1,3 +1,7 @@
+.contacts__wrapper {
+  position: relative;
+}
+
 .contacts {
   width: 100%;
 
@@ -6,6 +10,25 @@
   }
 }
 
+.contacts__cooperation {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 100px;
+    left: 7.64%;
+
+    width: 565px;
+
+    background-color: #ffffff;
+    z-index: 1;
+  }
+}
 
 .contacts__cooperation-text {
   .font(16px, 20px);
@@ -20,4 +43,22 @@
   .font(14px, 20px);
   margin: 0;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    .font(16px, 20px);
+  }
+}
+
+.contacts__map {
+  position: relative;
+}
+
+.contacts__map iframe {
+  width: 100%;
+}
+
+.contacts__map-icon {// TODO: пока не знаю как сделать нормально его. Просто кину сюда
+  position: absolute;
+  top: 0;
+  left: 0;
 }
