@@ -1,20 +1,68 @@
 .example {
   background-color: @bg-color;
+  padding-top: 1px;
+
+  @media (min-width: @tablet-width) {
+    background: linear-gradient(to top, @bg-color 462px, #ffffff 462px);
+  }
+}
+
+.example__wrapper {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title title"
+      "description description"
+      "result cost"
+      "cats cats";
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 440px 580px;
+    column-gap: 200px;
+    grid-template-areas: "title cats"
+      "description cats"
+      "result cats"
+      "cost cats";
+  }
 }
 
 .example__title {
-  margin: 0;
-
-  font-family: @oswald-font;
   .font(36px, 40px);
+  margin: 0;
+  padding-top: 25px;
+  margin-bottom: 40px;
+  font-family: @oswald-font;
   font-weight: 400;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    .font(60px, 60px);
+    padding-top: 43px;
+    margin-bottom: 63px;
+    grid-area: title;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 69px;
+  }
 }
 
 .example__description {
   .font(14px, 18px);
   margin: 0;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    .font(16px, 24px);
+    grid-area: description;
+  }
+}
+
+.example__result {
+  @media (min-width: @tablet-width) {
+    grid-area: result;
+  }
 }
 
 .example__number {
@@ -23,12 +71,20 @@
   font-family: @oswald-font;
   font-weight: 400;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    .font(30px, 37px);
+  }
 }
 
 .example__definition {
   .font(12px, 12px);
   margin: 0;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    .font(14px, 14px);
+  }
 }
 
 .example__cost {
@@ -38,4 +94,21 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    .font(20px, 20px);
+    grid-area: cost;
+    justify-self: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-self: start;
+  }
+}
+
+.example__cats {
+  @media (min-width: @tablet-width) {
+    grid-area: cats;
+    justify-self: center;
+  }
 }
