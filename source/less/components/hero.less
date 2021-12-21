@@ -24,6 +24,7 @@
 
   @media (min-width: @tablet-width) {
     padding-left: 87px;
+    padding-top: 62px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -31,6 +32,7 @@
 
   @media (min-width: @desktop-width) {
     padding-left: 80px;
+    padding-top: 223px;
   }
 }
 
@@ -41,25 +43,21 @@
 
   @media (min-width: @tablet-width) {
     .font(60px, 60px);
-    margin-top: 62px;
+    margin-bottom: 41px;
     width: 450px;
     box-sizing: border-box;
     text-align: left;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: 223px;
   }
 }
 
 .hero__text {
   .font(14px, 14px);
   margin: 0;
+  margin-bottom: 49px;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     .font(20px, 20px);
-    margin-top: 41px;
   }
 }
 
@@ -80,11 +78,8 @@
 
 .hero__button {
   @media (min-width: @tablet-width) {
-    margin-top: 49px;
-    padding: 14px 26px;
-
     .font(20px, 20px);
-
+    padding: 14px 26px;
     order: 3;
     z-index: 2;
   }
