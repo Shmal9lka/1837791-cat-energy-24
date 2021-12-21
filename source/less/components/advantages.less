@@ -18,13 +18,13 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: 230px 230px;
-    column-gap: 154px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
     row-gap: 77px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: repeat(4, 245px);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
   }
 }
@@ -37,13 +37,31 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 70px;
 
-    /*&::after { TODO: Инкремент есть, позционирование через абсолют
+    &::after {
+      .font(280px, 280px);
       content: counter(number);
       font-family: @oswald-font;
       color: @bg-color-lighter;
-      .font(280px, 280px);
       position: absolute;
-    }*/
+      z-index: -1;
+      top: -40px;
+      right: -30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 70px;
+
+      &::after {
+        .font(280px, 280px);
+        content: counter(number);
+        font-family: @oswald-font;
+        color: @bg-color-lighter;
+        position: absolute;
+        z-index: -1;
+        top: -40px;
+        right: -30px;
+      }
+    }
   }
 
 
