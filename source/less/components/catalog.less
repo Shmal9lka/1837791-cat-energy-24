@@ -3,11 +3,28 @@
   font-family: @oswald-font;
   font-weight: 400;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    .font(60px, 60px);
+  }
 }
 
 .catalog__list {
   .reset-list();
   border-top: 1px solid #ebebeb;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 324px);
+    column-gap: 60px;
+    row-gap: 141px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(auto-fill, 245px);
+    column-gap: 80px;
+    row-gap: 143px;
+  }
 }
 
 .catalog__item {
