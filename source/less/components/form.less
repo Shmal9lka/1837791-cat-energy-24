@@ -1,5 +1,3 @@
-
-
 .form__title {
   .font(36px, 36px);
   font-family: @oswald-font;
@@ -7,6 +5,10 @@
   margin-bottom: 20px;
   font-weight: 400;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    .font(60px, 60px);
+  }
 }
 
 .form__text {
@@ -17,6 +19,18 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    .font(20px, 30px);
+  }
+}
+
+.form__action {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+  }
 }
 
 .form__group {
@@ -29,16 +43,51 @@
   color: #444444;
 
   border: none;
+
+  @media (min-width: @tablet-width) {
+    .font(20px, 29.64px);
+
+    &--program {
+      box-sizing: border-box;
+      border: 1px solid #e7e7e7;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--contacts {
+      grid-column: 1/-1;
+    }
+
+    &--comment {
+      grid-column: 1/-1;
+    }
+
+    &--additionally {
+      grid-column: 1/-1;
+    }
+  }
 }
 
 .form__list {
   .reset-list();
+
+  @media (min-width: @desktop-width) {
+    &--contacts {
+      display: grid;
+      grid-template-columns: repeat(2, 570px);
+      column-gap: 80px;
+    }
+  }
 }
 
 .form__item {
   margin-bottom: 14px;
 
   display: flex;
+
+  @media (min-width: @tablet-width) {
+    .font(20px, 30px);
+  }
 }
 
 .form__field {
@@ -63,6 +112,10 @@
   margin-bottom: 34px;
   color: #000000;
   text-transform: none;
+
+  @media (min-width: @tablet-width) {
+    .font(36px, 36px);
+  }
 }
 
 .form__comment {
@@ -73,14 +126,38 @@
   color: #444444;
 
   resize: none;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+
+    .font(20px, 30px);
+  }
 }
 
 .form__additionally {
   .reset-list();
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 282px 287px;
+    column-gap: 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 80px;
+  }
 }
 
 .form__additionally-item {
   margin-bottom: 13px;
+}
+
+.form__wrapper {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .form__submit {
