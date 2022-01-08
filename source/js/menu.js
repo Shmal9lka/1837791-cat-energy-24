@@ -1,5 +1,5 @@
-let navButton = document.querySelector('.page-header__toggle');
-let navMain = document.querySelector('.main-nav');
+const navButton = document.querySelector('.page-header__toggle');
+const navMain = document.querySelector('.main-nav');
 
 navButton.classList.remove('page-header__toggle--nojs');
 navMain.classList.remove('main-nav--nojs');
