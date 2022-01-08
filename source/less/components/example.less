@@ -12,10 +12,7 @@
 }
 
 .example__wrapper {
-  margin: 0 20px;
-
   @media (min-width: @tablet-width) {
-    margin: 0 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "title title"
@@ -25,6 +22,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin: 0 auto;
     grid-template-columns: 440px 580px;
     column-gap: 200px;
     grid-template-areas: "title cats"
@@ -227,9 +225,4 @@
       left: 0;
     }
   }
-}
-
-.example__select {
-  margin: 20px 0 0;
-  padding-bottom: 45px;
 }
