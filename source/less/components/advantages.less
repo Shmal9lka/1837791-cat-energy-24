@@ -1,29 +1,46 @@
+.advantages {
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+    border-bottom: 1px solid #e6e6e6;
+  }
+}
+
 .advantages__title {
   .font(36px, 40px);
   margin: 0;
+  margin-bottom: 40px;
   font-family: @oswald-font;
   font-weight: 400;
   color: #000000;
 
   @media (min-width: @tablet-width) {
     .font(60px, 60px);
+    margin: 17px 30px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 41px 0 0;
   }
 }
 
 .advantages__list {
   .reset-list();
+  margin: 0;
+  margin-bottom: 29px;
   display: flex;
   flex-direction: column;
   counter-reset: number 0;
 
   @media (min-width: @tablet-width) {
     display: grid;
+    margin: 0;
+    margin-bottom: 29px;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
-    row-gap: 77px;
+    row-gap: 63px;
   }
 
   @media (min-width: @desktop-width) {
+    margin: 72px 0 32px;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
   }
@@ -34,8 +51,14 @@
   counter-increment: number;
   position: relative;
 
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  column-gap: 20px;
+
   @media (min-width: @tablet-width) {
     margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
 
     &::after {
       .font(280px, 280px);
@@ -59,23 +82,32 @@
       }
     }
   }
+}
 
+.advantages__img {
+  width: 60px;
+  height: 60px;
 
-  /*   img { TODO:позиционирование СВГ
-    position: relative;
-    left: 50%;
-    top: 20%;
-    transform: translateX(-50%);
-  } */
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .advantages__description {
   .font(14px, 18px);
   margin: 0;
+  padding-top: 2px;
   color: #444444;
 
   @media (min-width: @tablet-width) {
     .font(16px, 24px);
-    padding-top: 31px;
+    padding-top: 30px;
+  }
+}
+
+.advantages__description br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
   }
 }
