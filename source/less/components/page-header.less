@@ -5,6 +5,10 @@
   display: flex;
   justify-content: space-between;
 
+  @media (max-width: @mobile-width-only) {
+    border-bottom: 1px solid #d9d9d9;
+  }
+
   @media (min-width: @tablet-width) {
     padding: 24px 30px 0;
     width: auto;
@@ -150,6 +154,7 @@
   &--nojs {
     cursor: auto;
     opacity: 0;
+    pointer-events: none;
 
     &:hover,
     &:active {
