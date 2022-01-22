@@ -1,8 +1,9 @@
 .page-header {
   position: relative;
-  width: auto;
 
+  width: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   @media (max-width: @mobile-width-only) {
@@ -19,19 +20,13 @@
   @media (min-width: @desktop-width) {
     padding: 51px 0 0;
     margin: 0 auto -110px;
-    margin-bottom: 0;
-    z-index: 2;
     width: 1220px;
-  }
 
-  &--inner {
-    margin-bottom: 0;
-  }
-}
+    z-index: 2;
 
-.page-header--index {
-  @media (min-width: @desktop-width) {
-    margin-bottom: -45px;
+    &--inner {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -103,6 +98,7 @@
 
 .page-header__toggle {
   position: relative;
+
   padding: 0;
   width: 56px;
   height: 65px;
@@ -155,7 +151,6 @@
   &--nojs {
     cursor: auto;
     opacity: 0;
-    pointer-events: none;
 
     &:hover,
     &:active {
