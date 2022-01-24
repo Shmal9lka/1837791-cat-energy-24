@@ -4,21 +4,6 @@
   z-index: 1;
 }
 
-.additional__title-wrapper {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background-color: @element-basic-color;
-    z-index: -2;
-    top: 50%;
-  }
-}
-
 .additional__title {
   .font(24px, 24px);
   margin: 25px 0 35px;
@@ -39,7 +24,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 76px 40px 80px;
+    margin: 76px -40px 80px;
     padding-left: 40px;
     padding-right: 35px;
   }
@@ -56,6 +41,7 @@
     display: grid;
     grid-template-columns: 895px 245px;
     column-gap: 80px;
+    margin: 0 auto;
   }
 }
 
