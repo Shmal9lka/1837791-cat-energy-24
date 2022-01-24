@@ -173,12 +173,10 @@
 
 .form__field:focus + .form__svg path {
   stroke: @element-basic-color;
-  fill: @element-basic-color;
 }
 
 .form__field--error + .form__svg path {
   stroke: #ff8282;
-  fill: #ff8282;
 }
 
 .form__label {
@@ -277,21 +275,6 @@
   }
 }
 
-.form__legend--wrapper {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background-color: @element-basic-color;
-    z-index: -2;
-    top: 50%;
-  }
-}
-
 .form__comment {
   margin: 38px 20px 21px;
   padding: 9px 12px 9px 15px;
@@ -328,7 +311,6 @@
 
   @media (min-width: @desktop-width) {
     margin: 76px 0 62px;
-    width: 1220px;
   }
 }
 

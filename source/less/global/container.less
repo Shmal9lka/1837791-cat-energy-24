@@ -1,4 +1,4 @@
-.container {
+.container__normal {
   margin: 0 auto;
   width: 280px;
 
@@ -7,6 +7,13 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
+.container__desktop-only {
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
     width: 1220px;
   }
 }
