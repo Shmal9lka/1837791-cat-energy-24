@@ -1,0 +1,14 @@
+.title-green-stripe {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: @element-basic-color;
+    z-index: -2;
+    top: 50%;
+  }
+}
