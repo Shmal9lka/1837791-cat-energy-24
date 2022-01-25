@@ -4,6 +4,11 @@
   align-items: center;
   margin: 20px 0 0;
   padding-bottom: 45px;
+
+  @media (min-width: @tablet-width) {
+    margin: 31px 0 0;
+    padding-bottom: 60px;
+  }
 }
 
 .range-slider__range {
@@ -130,6 +135,12 @@
     &:hover {
       &::after {
         border-top-style: solid;
+      }
+    }
+
+    &:active {
+      &::after {
+        border: none;
       }
     }
   }
