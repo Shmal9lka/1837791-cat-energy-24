@@ -15,8 +15,8 @@
 }
 
 .social__link {
-  &:hover path {
-    fill: @element-basic-color;
+  &:hover svg {
+    stroke: @element-basic-color;
   }
 
   &:active {
@@ -25,6 +25,8 @@
 }
 
 .social__icon-vk {
+  fill: #666666;
+
   @media (min-width: @tablet-width) {
     width: 30px;
     height: 22px;
@@ -32,6 +34,8 @@
 }
 
 .social__icon-instagram {
+  fill: #666666;
+
   @media (min-width: @tablet-width) {
     width: 23px;
     height: 23px;
@@ -39,6 +43,9 @@
 }
 
 .social__icon-facebook {
+  fill: none;
+  stroke: #666666;
+
   @media (min-width: @tablet-width) {
     width: 28px;
     height: 33px;
