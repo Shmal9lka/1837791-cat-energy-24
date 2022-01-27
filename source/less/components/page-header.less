@@ -13,22 +13,24 @@
   @media (min-width: @tablet-width) {
     padding: 24px 30px 0;
     width: auto;
+
     justify-content: space-between;
     align-items: center;
   }
 
   @media (min-width: @desktop-width) {
     padding: 51px 0 0;
-    margin: 0 auto -110px;
+    margin: 0 auto;
     width: 1220px;
 
     z-index: 2;
 
-    &--inner {
-      margin-bottom: 0;
+    &--index {
+      margin-bottom: -114px;
     }
   }
 }
+
 
 .page-header__logo {
   flex-grow: 1;
@@ -65,8 +67,8 @@
     margin: 0 auto;
 
     &--icon {
-      top: -4px;
-      right: -3px;
+      top: -1px;
+      right: -20px;
     }
 
     &--logo-name {
@@ -77,21 +79,19 @@
 
   @media (min-width: @tablet-width) {
     &--icon {
-      margin-right: 12px;
-      width: 60.44px;
-      height: 49.8px;
+      width: 174px;
+      height: 51.68px;
+    }
+
+    &--logo-name {
+      display: none;
     }
   }
 
   @media (min-width: @desktop-width) {
     &--icon {
-      margin-right: 14px;
-      width: 70.16px;
+      width: 202px;
       height: 59px;
-    }
-
-    &--logo-name {
-      margin-top: 4px;
     }
   }
 }

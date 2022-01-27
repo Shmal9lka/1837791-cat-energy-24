@@ -36,7 +36,19 @@
   margin-top: 15px;
 
   @media (min-width: @tablet-width) {
-    margin: 0 auto;
+    position: absolute;
+    bottom: 299px;
+    left: calc(50% - 80px);
+
+    // &--small {
+    //   width: 161px;
+    //   height: 172px;
+    // }
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: 305px;
+    left: calc(50% - 69px);
   }
 }
 

@@ -23,6 +23,7 @@
 
   @media (min-width: @desktop-width) {
     margin: 0 auto;
+    padding-bottom: 10px;
     grid-template-columns: 440px 580px;
     column-gap: 200px;
     grid-template-areas: "title cats"
@@ -51,7 +52,7 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 22px;
-    margin-bottom: 78px;
+    margin-bottom: 85px;
   }
 }
 
@@ -178,8 +179,14 @@
 
   @media (min-width: @tablet-width) {
     position: relative;
+    margin: 84px 0 0;
+
     grid-area: cats;
     justify-self: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -21px;
   }
 }
 
@@ -196,8 +203,11 @@
 .example__cats-container {
   @media (min-width: @tablet-width) {
     position: relative;
-    width: 50%;
-    overflow: hidden;
+    width: 100%;
+
+    &--after {
+      display: none;
+    }
   }
 }
 
@@ -209,21 +219,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    position: absolute;
-    top: 0;
-
-    overflow: hidden;
-
     width: 592px;
     height: 511px;
-
-    &--before {
-      right: 0;
-    }
-
-    &--after {
-      display: block;
-      left: 0;
-    }
   }
 }
