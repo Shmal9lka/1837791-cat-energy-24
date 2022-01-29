@@ -15,7 +15,15 @@
 }
 
 .social__link {
-  &:hover svg {
+  &:hover .social__icon-vk {
+    fill: @element-basic-color;
+  }
+
+  &:hover .social__icon-instagram {
+    fill: @element-basic-color;
+  }
+
+  &:hover .social__icon-facebook {
     stroke: @element-basic-color;
   }
 
@@ -49,10 +57,5 @@
   @media (min-width: @tablet-width) {
     width: 28px;
     height: 33px;
-  }
-
-  &:hover path {
-    stroke: @element-basic-color;
-    fill: inherit;
   }
 }
