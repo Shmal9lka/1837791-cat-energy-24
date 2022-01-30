@@ -60,3 +60,31 @@
 .page-footer__copyright {
   width: 100%;
 }
+
+.page-footer__copyright-link {
+  margin: 21px 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .font(16px, 18.4px);
+  text-decoration: none;
+  color: #444444;
+
+  &:hover svg {
+    fill: @element-basic-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    justify-content: flex-end;
+  }
+}
+
+.page-footer__copyright-link span {
+  margin-right: 23px;
+  fill: #666666;
+}
