@@ -133,6 +133,10 @@ const watcher = () => {
   gulp.watch('source/js/*.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html));
   gulp.watch('source/img/**/*.svg', gulp.series(sprite, svg, reload));
+<<<<<<< HEAD
+=======
+  // gulp.watch('source/*.html').on('change', browser.reload);
+>>>>>>> 360dcd0f5be63eaf0ce90a32d41538619dd29fcd
 }
 
 //Build
