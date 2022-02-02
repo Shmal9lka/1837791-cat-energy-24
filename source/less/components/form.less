@@ -1,11 +1,6 @@
 .form {
   display: flex;
   flex-direction: column;
-
-  /* @media (min-width: @desktop-width) {
-    margin: 0 auto;
-    width: 1220px;
-  } */
 }
 
 .form__title {
@@ -52,12 +47,6 @@
 .form__action {
   display: flex;
   flex-direction: column;
-
-  /* @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 80px;
-  } */
 }
 
 .form__group {
@@ -215,6 +204,12 @@
     border-color: #ff8282;
   }
 
+  &--no-spin::-webkit-outer-spin-button,
+  &--no-spin::-webkit-inner-spin-button {
+    /* stylelint-disable-next-line property-no-vendor-prefix */
+    -webkit-appearance: none;
+  }
+
   @media (min-width: @tablet-width) {
     padding: 12px 37px 10px 19px;
     .font(20px, 29.64px);
@@ -242,38 +237,8 @@
 }
 
 .form__legend {
-  .font(24px, 26px);
-  position: relative;
-  padding: 0 20px;
-  width: min-content;
-  color: #000000;
-  text-transform: none;
-  background-color: #ffffff;
-
-  &--contacts {
-    margin-bottom: 35px;
-    min-width: 187px;
-  }
-
-  @media (min-width: @tablet-width) {
-    margin-left: 30px;
-    padding: 0 42px 0 39px;
-    .font(36px, 36px);
-
-    &--contacts {
-      margin-bottom: 76px;
-      white-space: nowrap;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    padding: 0 40px 0 40px;
-    margin-left: -40px;
-
-    &--additionally {
-      margin-bottom: 58px;
-    }
-  }
+  padding: 0;
+  width: 100%;
 }
 
 .form__comment {
