@@ -39,11 +39,11 @@
     </header>
 
     <main class="inner-main">
-      <section class="form">
-        <h2 class="form__title container container--desktop-only">Подбор программы</h2>
-        <p class="form__text container container--desktop-only">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <section class="form container container--desktop-only">
+        <h2 class="form__title">Подбор программы</h2>
+        <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class ="form__action" action="https://echo.htmlacademy.ru" method="post" target="_blank">
-            <div class="form__group-wrapper container container--desktop-only">
+            <div class="form__group-wrapper">
               <fieldset class="form__group form__group--info-cat">
                 <legend class="visually-hidden">Информация о коте</legend>
                 <ul class="form__list form__list--info-cat">
@@ -90,14 +90,8 @@
             </div>
 
           <fieldset class="form__group form__group--contacts">
-            <legend class="form__legend">
-              <div class="title-green-stripe">
-                <div class="container container--desktop-only">
-                  <h2 class="title-green-stripe__title title-green-stripe__title--contacts">Контактные данные (владельца кота)</h2>
-                </div>
-              </div>
-            </legend>
-            <ul class="form__list form__list--contacts container container--desktop-only">
+            <legend class="form__legend form__legend--contacts ">Контактные данные (владельца кота)</legend>
+            <ul class="form__list form__list--contacts">
               <li class="form__item">
                 <label class="form__label" for="email">E-mail:<sup>*</sup></label>
                 <input class="form__field form__field--contacts" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
@@ -116,27 +110,12 @@
           </fieldset>
 
           <fieldset class="form__group form__group--comment">
-            <legend class="form__legend">
-              <div class="title-green-stripe">
-                <div class="container container--desktop-only">
-                  <h2 class="title-green-stripe__title title-green-stripe__title--comment">Комментарии</h2>
-                </div>
-              </div>
-            </legend>
-            <div class="container container--desktop-only">
-              <textarea class="form__comment container container--desktop-only" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
-            </div>
+            <legend class="form__legend form__legend--comment">Комментарий</legend>
+              <textarea class="form__comment" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
           <fieldset class="form__group form__group--additionally">
-            <legend class="form__legend">
-              <div class="title-green-stripe">
-                <div class="container container--desktop-only">
-                  <h2 class="title-green-stripe__title title-green-stripe__title--comment">Дополнительно</h2>
-                </div>
-              </div>
-            </legend>
-            <div class="container container--desktop-only">
+            <legend class="form__legend form__legend--additionally">Дополнительно</legend>
               <ul class="form__additionally">
                 <li class="form__additionally-item">
                   <label class="control">
@@ -167,15 +146,14 @@
                   </label>
                 </li>
               </ul>
-            </div>
           </fieldset>
 
-          <div class="container container--desktop-only">
+
             <div class="form__wrapper">
               <button class="button form__submit" type="submit">отправить заявку</button>
               <p class="form__note"><small class="form__small"><sup>*</sup> — Обязательные поля</small></p>
             </div>
-          </div>
+
         </form>
 
       </section>

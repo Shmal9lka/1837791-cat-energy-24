@@ -17,9 +17,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 auto;
-    margin-top: 77px;
-    margin-bottom: 54px;
+    margin: 73px 0 56px;
   }
 }
 
@@ -38,9 +36,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 auto;
-    margin-bottom: 63px;
-    padding: 0;
+    margin: 0 0 63px;
+    padding-right: 850px;
   }
 }
 
@@ -217,12 +214,13 @@
 }
 
 .form__program {
-  .reset-list();
-  margin: 22px 20px 25px;
+  margin: 22px 20px 24px;
   padding: 0;
 
+  list-style-type: none;
+
   @media (min-width: @tablet-width) {
-    margin: 25px 28px 29px;
+    margin: 25px 28px 27px;
   }
 }
 
@@ -237,8 +235,80 @@
 }
 
 .form__legend {
-  padding: 0;
-  width: 100%;
+  position: relative;
+  padding: 0 20px;
+
+  .font(24px, 26px);
+  color: #000000;
+  text-transform: none;
+
+  z-index: 1;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+
+  &::before {
+    top: 14px;
+    width: 100%;
+    height: 4px;
+
+    background-color: #ffffff;
+
+    z-index: -1;
+  }
+
+  &::after {
+    top: 15px;
+    width: 100vw;
+    height: 2px;
+
+    background-color: @element-basic-color;
+
+    z-index: -2;
+  }
+
+  &--contacts {
+    margin-bottom: 35px;
+    min-width: 187px;
+    width: min-content;
+
+    @media (min-width: 400px) {
+      width: auto;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 30px;
+    padding: 0 42px 0 39px;
+    .font(36px, 36px);
+
+    &::before {
+      top: 21px;
+    }
+
+    &::after {
+      top: 22px;
+      left: -30px;
+    }
+
+    &--contacts {
+      margin-bottom: 76px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 40px 0 40px;
+    margin-left: -40px;
+
+    &::after {
+      left: -110px;
+      width: 102.8vw;
+    }
+  }
 }
 
 .form__comment {
@@ -252,6 +322,7 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #444444;
+  width: 87.5%;
 
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
@@ -271,12 +342,13 @@
     margin: 76px 70px 58px;
     padding-left: 18px;
     height: 174px;
-
+    width: 82%;
     .font(20px, 30px);
   }
 
   @media (min-width: @desktop-width) {
     margin: 76px 0 62px;
+    width: 1220px;
   }
 }
 
